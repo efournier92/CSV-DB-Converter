@@ -5,16 +5,18 @@ require 'pry'
 SEP = "***********************************************"
 
 =begin
-CLI SETUP:
+CLI SETUP STEPS:
 
-CREATE DATABASE ingredients;
+$ psql
 
-CREATE TABLE ingredients (
+$ CREATE DATABASE ingredients;
+
+$ CREATE TABLE ingredients (
 id SERIAL PRIMARY KEY,
 name VARCHAR(100)
 );
 
-COPY ingredients(id, name)
+$ COPY ingredients(id, name)
 FROM '/Users/Misigno/Challenges/csv-to-db/ingredients.csv' DELIMITER ',' CSV;
 =end
 
