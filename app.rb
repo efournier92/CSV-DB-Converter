@@ -1,24 +1,7 @@
 require 'pg'
 require 'csv'
-require 'pry'
 
 SEP = "***********************************************"
-
-=begin
-CLI SETUP STEPS:
-
-$ psql
-
-$ CREATE DATABASE ingredients;
-
-$ CREATE TABLE ingredients (
-id SERIAL PRIMARY KEY,
-name VARCHAR(100)
-);
-
-$ COPY ingredients(id, name)
-FROM '/Users/Misigno/Challenges/csv-to-db/ingredients.csv' DELIMITER ',' CSV;
-=end
 
 def db_connection
   begin

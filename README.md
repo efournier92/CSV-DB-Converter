@@ -6,21 +6,20 @@ Moreover, this app can push `CSV` data into a PostgreSQL database and print out 
 
 ##Setup Instructions
 
-```no-highlight
-$ psql
+* $ psql
 
-$=# \c ingredients;
+* $=# \c ingredients;
 
-$=# CREATE DATABASE ingredients;
+* $=# CREATE DATABASE ingredients;
 
-$=# CREATE TABLE ingredients(
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100)
+* $=# CREATE TABLE ingredients(
+      id SERIAL PRIMARY KEY,
+      name VARCHAR(100)
   );
 
-$=# COPY ingredients(id, name)
-    FROM '(path_to_project)/ingredients.csv' DELIMITER ',' CSV;
-```
+* $=# COPY ingredients(id, name)
+      FROM '(path_to_project)/ingredients.csv' DELIMITER ',' CSV;
+
 
 ##ScreenShots
-![CSV-DB-Converter_Output]()
+![CSV-DB-Converter_Output](http://gdurl.com/TnrX)
